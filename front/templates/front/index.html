@@ -13,21 +13,21 @@
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active c-item">
-              <img src="{% static 'front/images/teach.jpg' %}" class="h-75 d-block w-100 c-img" alt="...">
+              <img src="{% static 'front/images/teach.jpg' %}" class="d-block w-100 c-img" alt="...">
               <div class="carousel-caption d-none d-md-block">
                 <h5>First slide label</h5>
                 <p>Some representative placeholder content for the first slide.</p>
               </div>
             </div>
             <div class="carousel-item c-item">
-              <img src="{% static 'front/images/b3.jfif' %}" class="h-75 d-block w-100 c-img" alt="Image">
+              <img src="{% static 'front/images/b3.jfif' %}" class="d-block w-100 c-img" alt="Image">
               <div class="carousel-caption d-none d-md-block">
                 <h5>Second slide label</h5>
                 <p>Some representative placeholder content for the second slide.</p>
               </div>
             </div>
             <div class="carousel-item c-item">
-              <img src="{% static 'front/images/Joburg.jpg' %}" class="h-75 d-block w-100 c-img" alt="...">
+              <img src="{% static 'front/images/Joburg.jpg' %}" class="d-block w-100 c-img" alt="...">
               <div class="carousel-caption d-none d-md-block">
                 <h5>Third slide label</h5>
                 <p>Some representative placeholder content for the third slide.</p>
@@ -42,7 +42,75 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
-        </div>     
+        </div>    
+
+        <div class="row mt-4">
+            <div class="col-md-3 about mx-auto">
+              <h1>About NMA</h1>
+              <p>We are a maths tutoring organization.</p>
+            </div>
+        </div>
+
+        <div id="London" class="tabcontent">
+          <h1>Subjects</h1>
+          <p>London is the capital city of England.</p>
+        </div>
+
+        <div id="Paris" class="tabcontent">
+          <h1>Fees</h1>
+          <p>Paris is the capital of France.</p>
+        </div>
+
+        <div id="Tokyo" class="tabcontent">
+          <h1>Sessions</h1>
+          <p>Tokyo is the capital of Japan.</p>
+        </div>
+
+        <div id="Oslo" class="tabcontent">
+          <h1>Extras</h1>
+          <p>Oslo is the capital of Norway.</p>
+        </div>
+
+        <button class="tablink" onclick="openCity('London', this, 'red')" id="defaultOpen">London</button>
+        <button class="tablink" onclick="openCity('Paris', this, 'green')">Paris</button>
+        <button class="tablink" onclick="openCity('Tokyo', this, 'blue')">Tokyo</button>
+        <button class="tablink" onclick="openCity('Oslo', this, 'orange')">Oslo</button>
+
+        <div class="d-flex justify-content-around mt-4">
+            <h3>Events</h3>
+        </div>
+
+        <div class="d-flex justify-content-around m-4 mb-4">
+            <!-- Used cards -->
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="{% static 'service/images/male.jpg' %}" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">2. Jeremiah 29:11
+                  For I know the plans I have for you,” declares the Lord, “plans to prosper you and not to harm you, plans to give you hope and a future.
+                </p>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="{% static 'service/images/female.jpg' %}" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">1. John 3:16
+                  For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life.
+                </p>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="{% static 'service/images/male.jpg' %}" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">5. Romans 12:2
+                  Do not conform to the pattern of this world, but be transformed by the renewing of your mind. Then you will be able to test and approve what God’s will is—his good, pleasing and perfect will.
+
+                </p>
+              </div>
+            </div>
+      </div>
     </main>
     
 {% endblock %}
