@@ -1,2 +1,19 @@
 * {box-sizing: border-box}
 
+.all-announcements {
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	margin: 20px;
+}
+
+.announcement {
+	border: 0.1px solid grey;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	box-sizing: border-box;
+	margin: 5px 20px;
+	width: 100%;
+}
+

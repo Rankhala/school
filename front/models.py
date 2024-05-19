@@ -25,7 +25,7 @@ class Student(models.Model):
     subject = models.ManyToManyField(Subject,related_name="student_subjects")
     
     def __str__(self):
-        return f"{self.first_name} {self.last_name}"
+        return f"{self.student}"
 
 class Mark(models.Model):
     assessment = models.CharField(max_length=30,null=True)

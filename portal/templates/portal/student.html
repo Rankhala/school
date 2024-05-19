@@ -12,10 +12,30 @@
       <button class="nav-link fs-4 text-body" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Schedule</button>
     </div>
     <div class="tab-content" id="v-pills-tabContent">
-      <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">...</div>
-      <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
-      <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
-      <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
+      <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+        {% for announcement in all_announcements %}
+          <div class="row announcement border">
+            <h6 class="content">{{ announcement.content }}</h6>
+            <p class="date">{{ announcement.date }}</p>
+            <p class="username"><i>Posted by</i> {{ announcement.poster }}</p>
+          </div>
+        {% endfor %}
+      </div>
+      <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+        <h4>No assessments posted yet.</h4>
+      </div>
+      <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+        {% for mark in marks %}
+          <div class="row border">
+            <h6>{{ mark.assessment }}</h6>
+            <h5>{{ mark.percentage }}%</h5>
+            <p>{{ mark.subject }}</p>
+          </div>
+        {% endfor %}
+      </div>
+      <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+        <h4>No schedule posted yet.</h4>
+      </div>
     </div>
   </div>
 {% endblock %}
