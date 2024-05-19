@@ -19,7 +19,7 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link" href="#">Logout</a>
+              <a class="nav-link" href="{% url 'portal:logout' %}">Logout</a>
             </div>
           </div>
         </div>
@@ -29,9 +29,5 @@
             {% block body %}
             {% endblock %}
         </div>
-
-        <footer class="mt-4">
-          <p>Powered by Sigma S&D</p>
-        </footer>
     </body>
 </html>

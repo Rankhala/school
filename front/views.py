@@ -9,8 +9,8 @@ from django.urls import reverse
 def index(request):
 	return render(request, "front/index.html")
 
-def about(request):
-	pass
+def events(request):
+	return render(request, "front/events.html")
 
 def login_view(request):
     if request.method == "POST":
@@ -25,7 +25,7 @@ def login_view(request):
             login(request, user)
             return HttpResponseRedirect(reverse("portal:student",args=(request.user.id, )))        
         else:
-            return render(request, "service/login.html", {
+            return render(request, "front/login.html", {
                 "message": "Invalid username and/or password."
             })
     else:

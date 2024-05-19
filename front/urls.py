@@ -6,6 +6,6 @@ app_name = "front"
 
 urlpatterns = [
 	path("",views.index,name="index"),
-	path("about",views.about,name="about"),
-	path("login",views.login_view,name="login"),
+	path("events",views.events,name="events"),
+	path("login",views.login_view,name="login"),	
 ]
