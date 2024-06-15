@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-pap#64rbiet_t011((g_og140rt8s&h_jo*i8yg!b#8$kazo8s
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['nm-academy.onrender.com']
 
 
 # Application definition
