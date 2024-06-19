@@ -93,11 +93,14 @@ DATABASE_ROUTERS = ["school.PortalRouter.PortalRouter"]
 
 # Replace the SQLite DATABASES configuration with PostgreSQL:
 DATABASES = {
-    'default': dj_database_url.config(
-        # Replace this value with your local database's connection string.
-        default='postgresql://postgres:postgres@localhost:5432/mysite',
-        conn_max_age=600
-    )
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'nma_db',
+        'USER': 'nma_db_user',
+        'PASSWORD': 'fNCZtDGahs65RspBCm8eT7NyOqXzSeGT',
+        'HOST': 'dpg-cppciq6ehbks73bvqvi0-a',
+        'PORT': '5432'
+    }
 }
 
 AUTH_USER_MODEL = 'front.User'
