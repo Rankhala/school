@@ -12,6 +12,9 @@ def index(request):
 def events(request):
 	return render(request, "front/events.html")
 
+def about(request):
+    return render(request, "front/about.html")
+
 def login_view(request):
     if request.method == "POST":
 
