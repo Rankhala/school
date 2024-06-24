@@ -5,33 +5,52 @@
 {% block body %}
 
     <main>
-      <div class="row mt-4">
-        <h5 class="col-md-3 about mx-auto">Learner Testimonials</h5>
+      <div class="row no-gutters d-flex justify-content-center">
+        <h5 class="text-center" style="color:orange; font-style: italic;">@Nyathi Maths Academy</h5>
+        <div class="col-md-4 bg-warning text-dark">
+          <h5 class="text-center">Our Vision</h5>
+          <p>
+            To foster positive attitude, confidence and competence in mathematical and scientific knowledge.
+          </p>
+        </div>
+        <div class="col-md-4 bg-info text-dark">
+          <h5 class="text-center">Our Mission</h5>
+          <p>
+            Impacting knowledge and instilling strong a foundation and understanding of the basics of maths and science.
+          </p>
+        </div>  
       </div>
-      <div class="row d-flex justify-content-around m-4">
+
+      <div class="row mt-4">
+        <h5 class="text-center">Learner Testimonials</h5>
+      </div>
+
+      <div class="container">
         <!-- Used cards -->
-        <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="{% static 'front/images/TM.jpg' %}" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Tumelo Motsugi</h5>
-            <p class="card-text">It was my immense luck and fortune to be the part of the academy where I can grow. The entire stuff leaves no stone unturned to shape one\'s future.
-            </p>
+        <div class="row gx-6 justify-content-evenly">
+          <div class="card col-4" style="width: 14rem;">
+            <img class="card-img-top" src="{% static 'front/images/TM.jpg' %}" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Tumelo Motsugi</h5>
+              <p class="card-text">It was my immense luck and fortune to be the part of the academy where I can grow. The entire stuff leaves no stone unturned to shape one\'s future.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="{% static 'front/images/KN.jpg' %}" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Khuts'o Nalana</h5>
-            <p class="card-text">In my experience all the tutors are very supportive and friendly and the placement and learning processes has been very smooth throughout.
-            </p>
+          <div class="card col-4" style="width: 14rem;">
+            <img class="card-img-top" src="{% static 'front/images/KN.jpg' %}" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Khuts'o Nalana</h5>
+              <p class="card-text">In my experience all the tutors are very supportive and friendly and the placement and learning processes has been very smooth throughout.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="{% static 'front/images/male.jpg' %}" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Tshepo Tladi</h5>
-            <p class="card-text">I thank NMA & its staff for putting in all the efforts to groom us and make us ready for tertiary university.
-            </p>
+          <div class="card col-4" style="width: 14rem;">
+            <img class="card-img-top" src="{% static 'front/images/male.jpg' %}" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Tshepo Tladi</h5>
+              <p class="card-text">I thank NMA & its staff for putting in all the efforts to groom us and make us ready for tertiary university.
+              </p>
+            </div>
           </div>
         </div>
       </div>
