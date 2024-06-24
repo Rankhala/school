@@ -12,20 +12,24 @@
     <body>
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light px-4">
-            <a class="navbar-brand" href="{% url 'front:index' %}">NMA</a>
-          
-            <div>
-              <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                      <a class="nav-link" href="{% url 'front:about' %}">About</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="{% url 'front:events' %}">Events</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="{% url 'front:login' %}">NMA_Login</a>
-                    </li>
-              </ul>
+            <div class="container-fluid">
+                <a class="navbar-brand" href="{% url 'front:index' %}">NMA</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                          <a class="nav-link" href="{% url 'front:about' %}">About</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="{% url 'front:events' %}">Events</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="{% url 'front:login' %}">NMA_Login</a>
+                        </li>
+                  </ul>
+                </div>
             </div>
         </nav>
         

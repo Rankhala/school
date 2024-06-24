@@ -3,95 +3,93 @@
 {% load static %}
 
 {% block body %}
-
-    <main>
-      <div id="carouselExampleCaptions" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active c-item">
+        <img src="{% static 'front/images/teach.jpg' %}" class="d-block w-100 c-img" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>NMA Motto</h5>
+          <p>Teaching and learning is interactive. We learn by doing.</p>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active c-item">
-            <img src="{% static 'front/images/teach.jpg' %}" class="d-block w-100 c-img" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>NMA Motto</h5>
-              <p>Teaching and learning is interactive. We learn by doing.</p>
-            </div>
-          </div>
-          <div class="carousel-item c-item">
-            <img src="{% static 'front/images/b3.jfif' %}" class="d-block w-100 c-img" alt="Image">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Our Teaching Model</h5>
-              <p>Ours is hybrid learning; 70% face to face, 30% online. </p>
-            </div>
-          </div>
-          <div class="carousel-item c-item">
-            <img src="{% static 'front/images/Joburg.jpg' %}" class="d-block w-100 c-img" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Credentials</h5>
-              <p>More than 5 years of excellence. 97% of learners above 65% pass mark.</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>    
-
-      <div class="row m-2">
-          <div class="col-md-3 about mx-auto">
-            <h1 class="text-center">About NMA</h1>
-            <p class="text-center">We are a maths tutoring organization.</p>
-          </div>
       </div>
-
-      <div class="row mb-4">
-        <div id="London" class="tabcontent">
-          <h1>Subjects</h1>
-          <p>Mathematics</p>
-          <p>Physical Sciences</p>
+      <div class="carousel-item c-item">
+        <img src="{% static 'front/images/b3.jfif' %}" class="d-block w-100 c-img" alt="Image">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Our Teaching Model</h5>
+          <p>Ours is hybrid learning; 70% face to face, 30% online. </p>
         </div>
-
-        <div id="Paris" class="tabcontent">
-          <h1>Fees per Subject</h1>
-          <p>R3500 per year</p>
-          <p>R400 per month</p>
-        </div>
-
-        <div id="Tokyo" class="tabcontent">
-          <h1>Sessions</h1>
-          <p>Monday to Friday: 11am to 5pm</p>
-          <p>Saturday: 9am to 1pm</p>
-        </div>
-
-        <div id="Oslo" class="tabcontent">
-          <h1>Contacts</h1>
-          <p>Phone number: 071 9763 751</p>
-        </div>
-
-        <button class="tablink" style="background-color:red;" onclick="openCity('London', this, 'red')" id="defaultOpen">
-          Subjects
-        </button>
-        <button class="tablink" style="background-color:green;" onclick="openCity('Paris', this, 'green')">
-          Fees
-        </button>
-        <button class="tablink" style="background-color:blue;" onclick="openCity('Tokyo', this, 'blue')">
-          Classes
-        </button>
-        <button class="tablink" style="background-color:orange;" onclick="openCity('Oslo', this, 'orange')">
-          Contacts
-        </button>
       </div>
-
-      <div class="mt-5">
-        <h6>The Best</h6>
+      <div class="carousel-item c-item">
+        <img src="{% static 'front/images/Joburg.jpg' %}" class="d-block w-100 c-img" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Credentials</h5>
+          <p>More than 5 years of excellence. 97% of learners above 65% pass mark.</p>
+        </div>
       </div>
-    </main>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>    
+
+  <div class="row m-2">
+      <div class="col-md-3 about mx-auto">
+        <h1 class="text-center">About NMA</h1>
+        <p class="text-center">We are a maths tutoring organization.</p>
+      </div>
+  </div>
+
+  <div class="row mb-4">
+    <div id="London" class="tabcontent">
+      <h1>Subjects</h1>
+      <p>Mathematics</p>
+      <p>Physical Sciences</p>
+    </div>
+
+    <div id="Paris" class="tabcontent">
+      <h1>Fees per Subject</h1>
+      <p>R3500 per year</p>
+      <p>R400 per month</p>
+    </div>
+
+    <div id="Tokyo" class="tabcontent">
+      <h1>Sessions</h1>
+      <p>Monday to Friday: 11am to 5pm</p>
+      <p>Saturday: 9am to 1pm</p>
+    </div>
+
+    <div id="Oslo" class="tabcontent">
+      <h1>Contacts</h1>
+      <p>Phone number: 071 9763 751</p>
+    </div>
+
+    <button class="tablink" style="background-color:red;" onclick="openCity('London', this, 'red')" id="defaultOpen">
+      Subjects
+    </button>
+    <button class="tablink" style="background-color:green;" onclick="openCity('Paris', this, 'green')">
+      Fees
+    </button>
+    <button class="tablink" style="background-color:blue;" onclick="openCity('Tokyo', this, 'blue')">
+      Classes
+    </button>
+    <button class="tablink" style="background-color:orange;" onclick="openCity('Oslo', this, 'orange')">
+      Contacts
+    </button>
+  </div>
+
+  <div class="mt-5">
+    <h6>The Best</h6>
+  </div>
     
 {% endblock %}
