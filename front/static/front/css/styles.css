@@ -1,4 +1,4 @@
-/*.c-item {
+.c-item {
 	height: 480px;
 }
 
@@ -6,7 +6,7 @@
 	height: 100%;
 	object-fit: cover;
 	filter: brightness(0.6);
-}*/
+}
 
 /* Style the tab buttons */
 .tablink {
