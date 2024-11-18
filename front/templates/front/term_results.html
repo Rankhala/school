@@ -1,0 +1,43 @@
+{% extends "front/layout.html" %}
+
+{% load static %}
+
+{% block body %}
+
+  <div class="card m-3 mx-auto" style="max-width: 80%;">
+    <div class="row m-2">
+        <div class="col-md-3 about mx-auto">
+          <h1 class="text-center">Term 2 Results (2024)</h1>
+          <!-- <p class="text-center">2024 NMA end of year student's awards</p> -->
+        </div>
+    </div>
+
+    <div class="row m-2">
+      <div class="column">
+        <img src="{% static 'front/images/r1.jpg' %}" alt="...">
+      </div>
+      <div class="column">
+        <img src="{% static 'front/images/r2.jpg' %}" alt="...">
+      </div>
+      <div class="column">
+        <img src="{% static 'front/images/r3.jpg' %}" alt="...">
+      </div>
+      <div class="column">
+        <img src="{% static 'front/images/r4.jpg' %}" alt="...">
+      </div>
+      <div class="column">
+        <img src="{% static 'front/images/r5.jpg' %}" alt="...">
+      </div>
+      <div class="column">
+        <img src="{% static 'front/images/r6.jpg' %}" alt="...">
+      </div>
+      <div class="column">
+        <img src="{% static 'front/images/r7.jpg' %}" alt="...">
+      </div>
+      <div class="column">
+        <img src="{% static 'front/images/r8.jpg' %}" alt="...">
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

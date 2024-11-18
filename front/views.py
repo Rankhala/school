@@ -15,6 +15,9 @@ def events(request):
 def about(request):
     return render(request, "front/about.html")
 
+def term_results(request):
+    return render(request, "front/term_results.html")
+
 def login_view(request):
     if request.method == "POST":
 
